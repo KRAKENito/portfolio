@@ -1,12 +1,14 @@
-<div class="flex flex-col items-center p-6 w-full max-w-4xl mx-auto">
+<div
+  class="flex flex-col items-center justify-center p-6 w-full max-w-4xl mx-auto"
+>
   <!-- Profile Picture and Name -->
-  <div class="flex flex-col md:flex-row items-center md:space-x-6">
+  <div class="flex flex-row items-center space-x-6">
     <img
       src="../../../assets/pf.png"
       alt="Profile Picture"
       class="w-24 h-24 md:w-32 md:h-32 rounded-full p-2 bg-gray-100 hover:bg-gradient-to-r from-[#E66276] to-[#ecd1d5] shadow-lg transition-all duration-1000 ease-in-out transform"
     />
-    <div class="text-center md:text-left mt-4 md:mt-0">
+    <div class="text-left">
       <h1 class="text-2xl md:text-3xl font-bold text-[#E66276]">
         Faniloniaina RAMILISON
       </h1>
@@ -22,10 +24,10 @@
   </div>
 
   <!-- Bio Section -->
-  <div class="mt-6 w-11/12">
+  <div class="mt-6 w-full">
     <p class="text-sm text-left">
       <span class="text-black text-base">user&#64;krakenito:</span>~$
-      <span class="text-base text-[#E66276]">whoami</span>
+      <span class="text-base text-[#E66276]">whoami </span>
     </p>
     <p class="text-justify leading-relaxed text-gray-700 mt-2">
       <span class="text-[#E66276]">"Hello!</span> I'm a developer with a passion
@@ -40,63 +42,58 @@
   </div>
 
   <!-- About Section -->
-  <div class="w-full mt-6">
-    <div class="flex flex-col items-center p-4 w-full">
-      <div class="w-full p-4 text-left text-black">
-        <p class="text-sm">
-          <span class="text-base text-black">user&#64;krakenito:</span>~$
-          <span class="text-[#E66276]">neofetch</span>
+  <div class="w-full mt-6 text-left">
+    <p class="text-sm">
+      <span class="text-base text-black">user&#64;krakenito:</span>~$
+      <span class="text-[#E66276]">neofetch</span>
+    </p>
+    <div
+      class="flex flex-col md:flex-row items-start mt-4 space-x-0 md:space-x-4"
+    >
+      <pre class="text-4xl text-[#E66276] p-2">
+ _  __
+ | |/ /
+ | ' /
+ | . \
+ |_|\_\
+                </pre
+      >
+      <div class="flex flex-col space-y-1 leading-relaxed my-auto">
+        <p><span class="text-[#E66276]">Name:</span> Faniloniaina RAMILISON</p>
+        <p><span class="text-[#E66276]">OS:</span> Windows 11</p>
+        <p>
+          <span class="text-[#E66276]">Email:</span>
+          faniloniainaa21&#64;gmail.com
         </p>
-        <div
-          class="flex flex-col md:flex-row items-start mt-4 space-x-0 md:space-x-4"
-        >
-          <img
-            src="../../../assets/pf.png"
-            alt="Profile Picture"
-            class="w-24 h-24 md:w-32 md:h-32 rounded-full p-2 bg-gray-100 shadow-lg"
-          />
-          <div class="flex flex-col space-y-1 leading-relaxed">
-            <p>
-              <span class="text-[#E66276]">Name:</span> Faniloniaina RAMILISON
-            </p>
-            <p><span class="text-[#E66276]">OS:</span> Windows 11</p>
-            <p>
-              <span class="text-[#E66276]">Email:</span>
-              faniloniainaa21&#64;gmail.com
-            </p>
-            <p>
-              <span class="text-[#E66276]">Favorite Skills:</span> JavaScript,
-              TypeScript, PHP, Laravel, React, Angular, SQL, Tailwind CSS
-            </p>
-            <p>
-              <span class="text-[#E66276]">Interests:</span> Web Development,
-              Open Source
-            </p>
-          </div>
-        </div>
+        <p>
+          <span class="text-[#E66276]">Favorite Skills:</span> JavaScript,
+          TypeScript, PHP, Laravel, React, Angular, SQL, Tailwind CSS
+        </p>
       </div>
     </div>
   </div>
 
   <!-- GitHub Section -->
-  <div class="w-full mt-6">
+  <div class="w-full mt-4">
+    <div class="w-full text-left text-black">
+      <p class="text-sm">
+        <span class="text-base text-black">user&#64;krakenito:</span>~$
+        <span class="text-[#E66276]">glow github.md </span>
+      </p>
+    </div>
     <div
-      class="flex flex-col md:flex-row items-center md:items-start justify-between p-6 w-full"
+      class="flex flex-col md:flex-row items-start justify-between p-6 w-full"
     >
       <div
-        class="flex flex-col md:flex-row items-center md:items-start space-x-4 md:space-x-6 text-center md:text-left"
+        class="flex flex-col md:flex-row items-center space-x-4 md:space-x-6 text-left my-auto"
       >
         <img
           src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
           alt="GitHub Logo"
           class="w-12 h-12 mb-2 transition duration-200 ease-in-out transform hover:scale-110"
         />
-        <div class="flex flex-col items-center md:items-start">
-          <h2
-            class="text-xl font-semibold text-[#E66276] transition duration-200 ease-in-out hover:text-gray-600"
-          >
-            GITHUB
-          </h2>
+        <div class="flex flex-col items-start">
+          <h2 class="text-xl font-semibold text-black">GITHUB</h2>
           <button
             class="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg mt-2 transition duration-200 ease-in-out transform hover:scale-105"
             (click)="redirectToGitHub()"
