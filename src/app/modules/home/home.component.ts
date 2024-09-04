@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core' ;
 
 @Component({
   selector: 'app-home',
@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  redirectToGitHub() {
-    window.location.href = 'https://github.com/KRAKENito';
+  //go to my github profile
+   redirectToGitHub() {
+    window.location.href = 'https://github.com/KRAKENito' ;
   }
 }
