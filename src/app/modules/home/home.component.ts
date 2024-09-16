@@ -8,6 +8,6 @@ import { Component } from '@angular/core' ;
 export class HomeComponent {
   //go to my github profile
    redirectToGitHub() {
-    window.location.href = 'https://github.com/faarm' ;
+    window.location.href = 'https://github.com/faanrm' ;
   }
 }
